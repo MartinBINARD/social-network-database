@@ -18,9 +18,9 @@ CREATE SCHEMA IF NOT EXISTS `groupamania` ;
 USE `groupamania` ;
 
 -- -----------------------------------------------------
--- Table `groupamania`.`users`
+-- Table `groupamania`.`user`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `groupamania`.`users` (
+CREATE TABLE IF NOT EXISTS `groupamania`.`user` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `firstname` VARCHAR(20) NOT NULL,
   `lastname` VARCHAR(20) NOT NULL,
@@ -34,9 +34,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `groupamania`.`POSTS`
+-- Table `groupamania`.`post`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `groupamania`.`POSTS` (
+CREATE TABLE IF NOT EXISTS `groupamania`.`post` (
   `post_id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
   `title` VARCHAR(45) NOT NULL,
@@ -60,9 +60,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `groupamania`.`comments`
+-- Table `groupamania`.`comment`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `groupamania`.`comments` (
+CREATE TABLE IF NOT EXISTS `groupamania`.`comment` (
   `comment_id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
   `post_id` INT NOT NULL,
